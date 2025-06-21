@@ -1,23 +1,66 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Odin Recipes</title>
-    </head>
-    <body>
-        <h1>Odin Recipes</h1>
-        <h2>1. lasagna</h2>
-            <img src="Images/lasagna.png">
-            <strong>Click Here for Recipe</strong>
-            <a href="recipes/lasagna.html" rel="noopener noreferrer">lasagna</a><br>
-        <h2>2. Pizza</h2>
-            <img src="Images/pizza.png">
-            <strong>Click Here for Recipe</strong>
-            <a href="recipes/pizza.html" rel="noopener noreferrer">Pizza</a><br>
-        <h2>3. Vadapav</h2>
-        <img src="Images/vadapav.png">
-        <strong>Cick Here For Recipe</strong>
-        <a href="recipes/vadapav.html"rel="noopener noreferrer">Vadapav</a><br>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Odin Recipes</title>
+  <style>
+    .menu {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+
+    .recipe {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .recipe img {
+      width: 100px;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .recipe a {
+      text-decoration: none;
+      color: blue;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Odin Recipes</h1>
+  <div class="main">
+    <div class="list" id="subsection">Red Text On Yellow Background</div>
+  </div>
+
+  <h1>Menu</h1>
+  <div class="menu">
+    <div class="recipe">
+      <h2>1. Lasagna</h2>
+      <img src="Images/lasagna.png" alt="Lasagna">
+      <strong>Click Here for Recipe</strong>
+      <a href="recipes/lasagna.html" rel="noopener noreferrer">Lasagna</a>
+    </div>
+
+    <div class="recipe">
+      <h2>2. Pizza</h2>
+      <img src="Images/pizza.png" alt="Pizza">
+      <strong>Click Here for Recipe</strong>
+      <a href="recipes/pizza.html" rel="noopener noreferrer">Pizza</a>
+    </div>
+
+    <div class="recipe">
+      <h2>3. Vadapav</h2>
+      <img src="Images/vadapav.png" alt="Vadapav">
+      <strong>Click Here for Recipe</strong>
+      <a href="recipes/vadapav.html" rel="noopener noreferrer">Vadapav</a>
+    </div>
+  </div>
+</body>
 </html>
